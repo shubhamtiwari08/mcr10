@@ -28,7 +28,7 @@ function NewProduct() {
     }
 
     const handleAdd =()=>{
-        const newList = inventory.push(data)
+        const newList = [...inventory,data]
         dataDispatch({type:"SET_DATA",payload:newList})
         setToggle(false)
     }
