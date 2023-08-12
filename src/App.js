@@ -1,13 +1,19 @@
  
 import './App.css';
 import Paths from './Paths';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
     <div className="App">
-     <p>hello</p>
+    <div className="home-container">
+      <section>
+        <Sidebar />
+      </section>
      <Paths/>
+     </div>
     </div>
+    
   );
 }
 
